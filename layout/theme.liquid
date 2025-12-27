@@ -1,1 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page_title }}</title>
+
+  {{ content_for_header }}
+
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+</head>
+<body>
+
+<header>
+  <h1>Hugstyrkr</h1>
+</header>
+
+{{ content_for_layout }}
+
+<footer>
+  <p>Strength Without Noise</p>
+</footer>
+
+</body>
+</html>
 
